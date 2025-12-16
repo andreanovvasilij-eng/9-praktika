@@ -34,8 +34,7 @@ namespace _8_задание
             }
             Console.WriteLine();
             string result = string.Join("; ", fruitArray);
-            Console.WriteLine($"Ожидаемый результат:" + result);
-            
+            Console.WriteLine($"Ожидаемый результат: " + result);   
         }
     }
 }

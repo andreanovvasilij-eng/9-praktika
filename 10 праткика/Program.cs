@@ -27,7 +27,6 @@ namespace _10_праткика
                 char upLetter = (char)('A' + random.Next(0, 26));
                 password.Append(upLetter);
             }
-
             Console.WriteLine("Пример возможного пароля: " + password);
 
         }

@@ -11,14 +11,21 @@ namespace _6_задание
     {
         static void Main(string[] args)
         {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Числа");
-            sb.Append("1,2,3,4,5,6,7,8,9,10,");
-            sb.Append(" ");
-            sb.Insert(25, ".");         
-            string sb = sb.Substring(sb.Length - 1);
-            Console.WriteLine(sb.ToString());
-
+                StringBuilder sb = new StringBuilder("Числа: ");
+                for (int i = 1; i <= 10; i++)
+                {
+                    sb.Append(i);
+                    if (i < 10)
+                    {
+                        sb.Append(',');
+                    }
+                }
+                sb.Append('.');
+                Console.WriteLine(sb.ToString());
         }
     }
 }
+        
+    
+    
+
