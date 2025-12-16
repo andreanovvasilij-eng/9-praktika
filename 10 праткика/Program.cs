@@ -28,7 +28,6 @@ namespace _10_праткика
                 password.Append(upLetter);
             }
             Console.WriteLine("Пример возможного пароля: " + password);
-
         }
     }
 }

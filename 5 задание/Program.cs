@@ -15,7 +15,6 @@ namespace _5_задание
             char[] charArray = LowerWord.ToCharArray();
             Array.Reverse(charArray);
             string reversed = new string(charArray);
-
             if (LowerWord == reversed)
             {
                 Console.WriteLine($"Слово {word} - палиндромом");
