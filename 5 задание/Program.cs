@@ -10,18 +10,28 @@ namespace _5_задание
     {
         static void Main(string[] args)
         {
-            string word = Console.ReadLine();
-            string LowerWord = word.ToLower();
-            char[] charArray = LowerWord.ToCharArray();
-            Array.Reverse(charArray);
-            string reversed = new string(charArray);
-            if (LowerWord == reversed)
+            Console.Write("Введите слово: ");
+            string word = Console.ReadLine().ToLower();
+            int left = 0;
+            int right = word.Length - 1;
+            bool Palindrom = true;
+            while (left < right)
             {
-                Console.WriteLine($"Слово {word} - палиндромом");
+                if (word[left] != word[right])
+                {
+                    Palindrom = false;
+                    break;
+                }
+                left++;
+                right--;
+            }
+            if (Palindrom)
+            {
+                Console.WriteLine($"Слово {word} полидром");
             }
             else
             {
-                Console.WriteLine($"Слово {word} не является палиндромом");            
+                Console.WriteLine($"Слово {word} не полидром");
             }
         }
     }
